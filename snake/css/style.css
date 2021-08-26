@@ -1,0 +1,70 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+</style>
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.body{
+    background:url("../image/bg.jpg");
+    min-height:  98vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+   
+   
+    
+}
+
+#scoreBox{
+    position:absolute;
+    top:9px;
+    right:200px;
+    font-size:39px;
+    font-weight:bold;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    
+
+}
+#highScoreBox{
+     position:absolute;
+    top:59px;
+    right:110px;
+    font-size:39px;
+    font-weight:bold;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+#board{
+   
+    background:linear-gradient(rgb(130, 253, 6),rgb(235, 197, 116));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid white;
+    display:grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    
+  
+}
+.head{
+    background: linear-gradient(rgb(218, 116, 116),rgb(233, 233, 171));
+    border:2px solid rgb(0, 0, 0);
+    transform :scale(1.02);
+    border-radius:9px;
+}
+.snake{
+    background-color:purple;
+    border:.25vmin solid white;
+    border-radius:12px;
+}
+.food{
+    background:linear-gradient(red,rgb(151, 4, 151));
+    border:.25vmin solid black;
+    border-radius:8px;
+}
